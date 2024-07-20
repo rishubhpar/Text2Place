@@ -5,7 +5,7 @@
   <meta name="description" content="Given a background image, we predict the plausible semantic region compatible with the text prompt to place humans. ">
   <meta property="og:title" content="Text2Place : Affordance Aware Human Guided Placement"/>
   <meta property="og:description" content="Given a background image, we predict the plausible semantic region compatible with the text prompt to place humans."/>
-  <meta property="og:url" content="https://harsh-gupta9897.github.io/Text2Place/"/>
+  <meta property="og:url" content="https://rishubhpar.github.io/Text2Place/"/>
   <meta property="og:image" content="static/image/og_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
@@ -74,7 +74,7 @@
               <div class="publication-links">
                 </span>
                 <span class="link-block">
-                  <a href="https://harsh-gupta9897.github.io/Text2Place/"                     
+                  <a href="https://rishubhpar.github.io/Text2Place/"                     
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="ai ai-arxiv"></i>
@@ -84,7 +84,7 @@
                 </span>
                 <!-- Video Link. -->
                 <span class="link-block">
-                  <a href="https://harsh-gupta9897.github.io/Text2Place/"                       
+                  <a href="https://rishubhpar.github.io/Text2Place/"                       
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fab fa-youtube"></i>
@@ -94,7 +94,7 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://harsh-gupta9897.github.io/Text2Place/"                        
+                  <a href="https://rishubhpar.github.io/Text2Place/"                        
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fab fa-github"></i>
@@ -117,7 +117,7 @@
       <div class="column is-full">
         <div class="content">
           <center>
-          <img src="static/static/main_teaser.png" alt="Text2Place: Affordance Aware Human Guided Placement" class="center-image blend-img-background"/>
+          <img src="static/static/main_teaser.png" alt="Text2Place: Affordance Aware Human Guided Placement" class="center-image blend-img-background" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
           </center>
           <div class="level-set has-text-justified">
             <p>
@@ -151,25 +151,25 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel results-carousel-t">  
         <div class="item item-1">
-          <img  src="static/carousels/abstract/abstract2.png"/>
+          <img  src="static/carousels/abstract/abstract2.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-2">
-          <img  src="static/carousels/abstract/abstract2.png" />
+          <img  src="static/carousels/abstract/abstract2.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-3">
-          <img  src="static/carousels/abstract/abstract2.png" />
+          <img  src="static/carousels/abstract/abstract2.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-4">
-          <img  src="static/static/abstract2.png" />
+          <img  src="static/static/abstract2.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-4">
-          <img  src="static/static/abstract1.png" />
+          <img  src="static/static/abstract1.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-5">
-          <img  src="static/static/abstract2.png" />
+          <img  src="static/static/abstract2.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-6">
-          <img  src="static/static/abstract1.png" />
+          <img  src="static/static/abstract1.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
       </div>
     </div>
@@ -184,7 +184,7 @@
         <div class="content">
           <h2 class="title is-3">Method Overview</h2>
           <center>
-          <img src="static/static/methodology.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/>
+          <img src="static/static/methodology.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
           </center>
           <p>
             Our approach consists of two stages: <strong>a) Semantic Mask Optimization.</strong> Given a background image \( \mathcal{I}_b \), we initialize a blob mask \( \mathcal{M} \) parameterized as Gaussian blobs and a foreground person image \( \mathcal{I}_p \). These two images are combined to form a composite image \( \mathcal{I}_c \), which is used to compute SDS loss with the action prompt. During optimization, only \( \mathcal{M} \) and \( \mathcal{I}_p \) are getting updated via \( \mathcal{I}_c \). After training \( \mathcal{M} \) converge to a plausible human placement region, which is then used for inpainting. <strong>b) Subject conditioned inpainting.</strong> Given a few subject images, we perform Textual Inversion to obtain its token embedding \( \mathbf{V*} \). Next, we use the inpainting pipeline of T2I models to perform personalized inpainting of the subject. 
@@ -207,25 +207,25 @@
       <h2 class="title is-3">Results</h2>
       <div id="results-carousel" class="carousel results-carousel ">  
         <div class="item item-1">
-          <img  src="static/carousels/results/result1.png"/>
+          <img  src="static/carousels/results/result1.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-2">
-          <img  src="static/carousels/results/result2.png" />
+          <img  src="static/carousels/results/result2.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-3">
-          <img  src="static/carousels/results/result3.png" />
+          <img  src="static/carousels/results/result3.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-4">
-          <img  src="static/carousels/results/result4.png" />
+          <img  src="static/carousels/results/result4.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-4">
-          <img  src="static/carousels/results/result5.png" />
+          <img  src="static/carousels/results/result5.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-5">
-          <img  src="static/carousels/results/result6.png" />
+          <img  src="static/carousels/results/result6.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-6">
-          <img  src="static/carousels/results/result7.png" />
+          <img  src="static/carousels/results/result7.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
       </div>
     </div>
@@ -287,32 +287,32 @@
         <div class="column is-half">
           <div id="results-carousel1" class="carousel results-carousel">
             <div class="item item-1">
-              <img src="static/carousels/text_editing/textedit11.png" />
+              <img src="static/carousels/text_editing/textedit11.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
             </div>
             <div class="item item-2">
-              <img src="static/carousels/text_editing/textedit12.png" />
+              <img src="static/carousels/text_editing/textedit12.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
             </div>
             <div class="item item-3">
-              <img src="static/carousels/text_editing/textedit13.png" />
+              <img src="static/carousels/text_editing/textedit13.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
             </div>
             <div class="item item-4">
-              <img src="static/carousels/text_editing/textedit14.png" />
+              <img src="static/carousels/text_editing/textedit14.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
             </div>
           </div>
         </div>
         <div class="column is-half">
           <div id="results-carousel2" class="carousel results-carousel">
             <div class="item item-1">
-              <img src="static/carousels/text_editing/textedit21.png" />
+              <img src="static/carousels/text_editing/textedit21.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
             </div>
             <div class="item item-2">
-              <img src="static/carousels/text_editing/textedit22.png" />
+              <img src="static/carousels/text_editing/textedit22.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;" />
             </div>
             <div class="item item-3">
-              <img src="static/carousels/text_editing/textedit23.png" />
+              <img src="static/carousels/text_editing/textedit23.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
             </div>
             <div class="item item-4">
-              <img src="static/carousels/text_editing/textedit24.png" />
+              <img src="static/carousels/text_editing/textedit24.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
             </div>
           </div>
         </div>
@@ -331,10 +331,10 @@
       </h2>
       <div id="results-carousel1" class="carousel results-carousel">
         <div class="item item-1">
-          <img src="static/carousels/pose_variations/poses1.png" />
+          <img src="static/carousels/pose_variations/poses1.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-2">
-          <img src="static/carousels/pose_variations/poses2.png" />
+          <img src="static/carousels/pose_variations/poses2.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
       </div>
       
@@ -353,16 +353,16 @@
       </h2>
       <div id="results-carousel1" class="carousel results-carousel">
         <div class="item item-1">
-          <img src="static/carousels/object_scene/object4.png" />
+          <img src="static/carousels/object_scene/object4.png"  style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-2">
-          <img src="static/carousels/object_scene/object2.png" />
+          <img src="static/carousels/object_scene/object2.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-3">
-          <img src="static/carousels/object_scene/object3.png" />
+          <img src="static/carousels/object_scene/object3.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
         <div class="item item-4">
-          <img src="static/carousels/object_scene/object1.png" />
+          <img src="static/carousels/object_scene/object1.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
         </div>
       </div>
     </div>
@@ -374,7 +374,7 @@
         <div class="column is-full">
           <div class="content">
             <h2 class="title is-3">Person Scene Hallucination</h2>
-            <img src="static/static/person_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/>
+            <img src="static/static/person_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
             <p>
               Our approach consists of two stages: <strong>a) Semantic Mask Optimization.</strong> Given a background image \( \mathcal{I}_b \), we initialize a blob mask \( \mathcal{M} \) parameterized as Gaussian blobs and a foreground person image \( \mathcal{I}_p \). These two images are combined to form a composite image \( \mathcal{I}_c \), which is used to compute SDS loss with the action prompt. During optimization, only \( \mathcal{M} \) and \( \mathcal{I}_p \) are getting updated via \( \mathcal{I}_c \). After training \( \mathcal{M} \) converge to a plausible human placement region, which is then used for inpainting. <strong>b) Subject conditioned inpainting.</strong> Given a few subject images, we perform Textual Inversion to obtain its token embedding \( \mathbf{V*} \). Next, we use the inpainting pipeline of T2I models to perform personalized inpainting of the subject. 
               </p>
@@ -390,7 +390,7 @@
         <div class="column is-full">
           <div class="content">
             <h2 class="title is-3">Single Person Scene Hallucination</h2>
-            <img src="static/static/scene_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/>
+            <img src="static/static/scene_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;"/>
             <p>
               Our approach consists of two stages: <strong>a) Semantic Mask Optimization.</strong> Given a background image \( \mathcal{I}_b \), we initialize a blob mask \( \mathcal{M} \) parameterized as Gaussian blobs and a foreground person image \( \mathcal{I}_p \). These two images are combined to form a composite image \( \mathcal{I}_c \), which is used to compute SDS loss with the action prompt. During optimization, only \( \mathcal{M} \) and \( \mathcal{I}_p \) are getting updated via \( \mathcal{I}_c \). After training \( \mathcal{M} \) converge to a plausible human placement region, which is then used for inpainting. <strong>b) Subject conditioned inpainting.</strong> Given a few subject images, we perform Textual Inversion to obtain its token embedding \( \mathbf{V*} \). Next, we use the inpainting pipeline of T2I models to perform personalized inpainting of the subject. 
             </p>
@@ -407,7 +407,7 @@
         <div class="column is-full">
           <div class="content">
             <h2 class="title is-3">Two Person Scene Hallucination</h2>
-            <img src="static/static/two_person_scene_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/>
+            <img src="static/static/two_person_scene_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/ style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999;">
             <p>
               Our approach consists of two stages: <strong>a) Semantic Mask Optimization.</strong> Given a background image \( \mathcal{I}_b \), we initialize a blob mask \( \mathcal{M} \) parameterized as Gaussian blobs and a foreground person image \( \mathcal{I}_p \). These two images are combined to form a composite image \( \mathcal{I}_c \), which is used to compute SDS loss with the action prompt. During optimization, only \( \mathcal{M} \) and \( \mathcal{I}_p \) are getting updated via \( \mathcal{I}_c \). After training \( \mathcal{M} \) converge to a plausible human placement region, which is then used for inpainting. <strong>b) Subject conditioned inpainting.</strong> Given a few subject images, we perform Textual Inversion to obtain its token embedding \( \mathbf{V*} \). Next, we use the inpainting pipeline of T2I models to perform personalized inpainting of the subject. 
             </p>
@@ -499,22 +499,20 @@
 
 <!-- Statcounter tracking code -->
 
-<!-- Default Statcounter code for Dreamix
-https://dreamix-video-editing.github.io -->
+<!-- Default Statcounter code for Text2Place
+https://rishubhpar.github.io/Text2Place/ -->
 <script type="text/javascript">
-var sc_project=12843789; 
-var sc_invisible=1; 
-var sc_security="e9c3bf5f"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="https://c.statcounter.com/12843789/0/e9c3bf5f/1/"
-alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  var sc_project=13019958; 
+  var sc_invisible=1; 
+  var sc_security="9973673c"; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+  href="https://statcounter.com/" target="_blank"><img class="statcounter"
+  src="https://c.statcounter.com/13019958/0/9973673c/1/" alt="Web Analytics"
+  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 
 <script>
   bulmaCarousel.attach('.results-carousel-t', {
