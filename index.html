@@ -266,9 +266,11 @@
     <div class="container is-max-desktop">
       
       <h2 class="title is-3">Text based Editing</h2>
-      <p class="has-text-justified" style="font-size: larger;">
-        The user selects elements to delete (shown in blue), and provide a text prompt pertaining to the background. Our diffusion decoder can generate content
-          in the missing region (in black)
+
+      <h2 class="subtitle">
+        <p> 
+          We can perform text-based editing of the placed subject leveraging the text-conditioned inpainting model. 
+
         </p>
         <br>
       <div class="columns">
@@ -317,11 +319,14 @@
     <!-- Pose Variations -->
     <div class="container is-max-desktop">
       <h2 class="title is-3">Pose Variations</h2>
-      <p class="has-text-justified" style="font-size: larger;">
-        The user selects elements to delete (shown in blue), and provide a text prompt pertaining to the background. Our diffusion decoder can generate content
-          in the missing region (in black)
-      </p>
-      <br>
+
+      <h2 class="subtitle">
+        <p> 
+      Our novel blob parameterization for semantic mask provides enough space for diverse pose variations for human placement. We 
+      leverage diffusion-based inpainting to generate diverse poses for the predicted human placement mask. 
+        </p>
+      </h2>
+
       <div id="results-carousel1" class="carousel results-carousel">
         <div class="item item-1">
           <img src="static/carousels/pose_variations/poses1.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999; padding: 10px;"/>
@@ -334,41 +339,17 @@
     </div>
 
     <br><br>
-    
-    <!-- Object Scene Placement -->
-    <div class="container is-max-desktop ">
-      <h2 class="title is-3">Object Scene Placement</h2>
-      <p class="has-text-justified" style="font-size: larger;">
-        The user selects elements to delete (shown in blue), and provide a text prompt pertaining to the background. Our diffusion decoder can generate content
-          in the missing region (in black)
-      </p>
-      <br>
-      <div id="results-carousel1" class="carousel results-carousel">
-        <div class="item item-1">
-          <img src="static/carousels/object_scene/object4.png"  style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999; padding: 10px;"/>
-        </div>
-        <div class="item item-2">
-          <img src="static/carousels/object_scene/object2.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999; padding: 10px;"/>
-        </div>
-        <div class="item item-3">
-          <img src="static/carousels/object_scene/object3.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999; padding: 10px;"/>
-        </div>
-        <div class="item item-4">
-          <img src="static/carousels/object_scene/object1.png" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999; padding: 10px;"/>
-        </div>
-      </div>
-    </div>
 
-    <br><br>
-    <!-- Person Scene Hallucination -->
-    <div class="container is-max-desktop">
+    <!-- Person Hallucination -->
+    <div class="container">
       <div class="columns is-centered">
         <div class="column is-full">
           <div class="content">
-            <h2 class="title is-3">Person Scene Hallucination</h2>
-            <img src="static/static/person_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999; padding: 10px;"/>
-            <p class="has-text-justified">
-              Our approach consists of two stages: <strong>a) Semantic Mask Optimization.</strong> Given a background image \( \mathcal{I}_b \), we initialize a blob mask \( \mathcal{M} \) parameterized as Gaussian blobs and a foreground person image \( \mathcal{I}_p \). These two images are combined to form a composite image \( \mathcal{I}_c \), which is used to compute SDS loss with the action prompt. During optimization, only \( \mathcal{M} \) and \( \mathcal{I}_p \) are getting updated via \( \mathcal{I}_c \). After training \( \mathcal{M} \) converge to a plausible human placement region, which is then used for inpainting. <strong>b) Subject conditioned inpainting.</strong> Given a few subject images, we perform Textual Inversion to obtain its token embedding \( \mathbf{V*} \). Next, we use the inpainting pipeline of T2I models to perform personalized inpainting of the subject. 
+            <h2 class="title is-3">Person Hallucination</h2>
+            <img src="static/static/person_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/>
+            <p>
+              We can hallucinate new persons by passing action prompts without subject conditioning (e.g., ‘a person sitting on sofa’ ). Our inpainting pipeline generates realistic outputs with humans in diverse poses consistent with the background, follows the text prompts, and
+preserves the subject’s identity.
               </p>
             </div>
           </div>
@@ -381,10 +362,12 @@
       <div class="columns is-centered">
         <div class="column is-full">
           <div class="content">
-            <h2 class="title is-3">Single Person Scene Hallucination</h2>
-            <img src="static/static/scene_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background" style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999; padding: 10px;"/>
-            <p class="has-text-justified">
-              Our approach consists of two stages: <strong>a) Semantic Mask Optimization.</strong> Given a background image \( \mathcal{I}_b \), we initialize a blob mask \( \mathcal{M} \) parameterized as Gaussian blobs and a foreground person image \( \mathcal{I}_p \). These two images are combined to form a composite image \( \mathcal{I}_c \), which is used to compute SDS loss with the action prompt. During optimization, only \( \mathcal{M} \) and \( \mathcal{I}_p \) are getting updated via \( \mathcal{I}_c \). After training \( \mathcal{M} \) converge to a plausible human placement region, which is then used for inpainting. <strong>b) Subject conditioned inpainting.</strong> Given a few subject images, we perform Textual Inversion to obtain its token embedding \( \mathbf{V*} \). Next, we use the inpainting pipeline of T2I models to perform personalized inpainting of the subject. 
+
+            <h2 class="title is-3">Scene Hallucination</h2>
+            <img src="static/static/scene_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/>
+            <p>
+              We can also generate scenes compatible with the given pose of the person. We first place a human subject in the background using the predicted semantic mask. Next, we invert the semantic mask and perform outpainting of the region covered by the subject using the same T2I-based inpainting pipeline.
+
             </p>
           </div>
         </div>
@@ -399,15 +382,39 @@
         <div class="column is-full">
           <div class="content">
             <h2 class="title is-3">Two Person Scene Hallucination</h2>
-            <img src="static/static/two_person_scene_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/ style="border: 2px solid gray; border-radius: 15px; box-shadow: 0px 0px 10px #999; padding: 10px;">
-            <p class="has-text-justified">
-              Our approach consists of two stages: <strong>a) Semantic Mask Optimization.</strong> Given a background image \( \mathcal{I}_b \), we initialize a blob mask \( \mathcal{M} \) parameterized as Gaussian blobs and a foreground person image \( \mathcal{I}_p \). These two images are combined to form a composite image \( \mathcal{I}_c \), which is used to compute SDS loss with the action prompt. During optimization, only \( \mathcal{M} \) and \( \mathcal{I}_p \) are getting updated via \( \mathcal{I}_c \). After training \( \mathcal{M} \) converge to a plausible human placement region, which is then used for inpainting. <strong>b) Subject conditioned inpainting.</strong> Given a few subject images, we perform Textual Inversion to obtain its token embedding \( \mathbf{V*} \). Next, we use the inpainting pipeline of T2I models to perform personalized inpainting of the subject. 
-            </p>
+
+            <img src="static/static/two_person_scene_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/>
+
           </div>
         </div>
       </div>
     </div>
 
+    <br><br> 
+    <!-- Object Scene Placement -->
+    <div class="container ">
+      <h2 class="title is-3">Object Scene Placement</h2>
+      <h2 class="subtitle">
+        <p> 
+      Our method can easily adapted to placement of novel objects, given that we perform only test time optimisation for obtaining 
+      semantic placement masks. 
+        </p>
+      </h2>
+      <div id="results-carousel1" class="carousel results-carousel">
+        <div class="item item-1">
+          <img src="static/carousels/object_scene/object4.png" />
+        </div>
+        <div class="item item-2">
+          <img src="static/carousels/object_scene/object2.png" />
+        </div>
+        <div class="item item-3">
+          <img src="static/carousels/object_scene/object3.png" />
+        </div>
+        <div class="item item-4">
+          <img src="static/carousels/object_scene/object1.png" />
+        </div>
+      </div>
+    </div>
 
   </div>
   <br>
