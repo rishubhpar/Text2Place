@@ -346,11 +346,11 @@
         <div class="column is-full">
           <div class="content">
             <h2 class="title is-3">Person Hallucination</h2>
-            <img src="static/static/person_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/>
             <p>
               We can hallucinate new persons by passing action prompts without subject conditioning (e.g., ‘a person sitting on sofa’ ). Our inpainting pipeline generates realistic outputs with humans in diverse poses consistent with the background, follows the text prompts, and
 preserves the subject’s identity.
-              </p>
+            </p>
+            <img src="static/static/person_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/>
             </div>
           </div>
         </div>
@@ -364,11 +364,10 @@ preserves the subject’s identity.
           <div class="content">
 
             <h2 class="title is-3">Scene Hallucination</h2>
-            <img src="static/static/scene_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/>
             <p>
-              We can also generate scenes compatible with the given pose of the person. We first place a human subject in the background using the predicted semantic mask. Next, we invert the semantic mask and perform outpainting of the region covered by the subject using the same T2I-based inpainting pipeline.
-
+              We can also generate scenes compatible with the person's given pose. We first place a human subject in the background using the predicted semantic mask. Next, we invert the semantic mask and perform outpainting of the region covered by the subject using the same T2I-based inpainting pipeline.
             </p>
+            <img src="static/static/scene_hallucination.png" alt="Text2Place: Affordance Aware Human Guided Placement Methodology" class="center-image blend-img-background"/>
           </div>
         </div>
       </div>
